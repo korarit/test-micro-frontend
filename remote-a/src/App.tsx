@@ -1,10 +1,10 @@
 import './App.css'
 
-function App() {
+function App({ count }: { count: number; }) {
 
   return (
     <>
-      <h1>This is Remote A</h1>
+      <h1>{count}</h1>
     </>
   )
 }

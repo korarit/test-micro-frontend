@@ -13,6 +13,7 @@ export default defineConfig({
         "./RemoteARoot": "./src/App.tsx",
       },
       shared: ["react", "react-dom"],
+      shareScope: "default"
     }),
   ],
   preview: {

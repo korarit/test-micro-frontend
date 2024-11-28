@@ -1,10 +1,22 @@
 import './App.css'
 
-function App() {
+interface AppProps {
+  addCount: () => void;
+}
+function App({ addCount }: AppProps) {
 
   return (
     <>
-      <h1 style={{color: "green"}}>This is Remote B</h1>
+      <button onClick={addCount} style={{
+        padding: '10px',
+        margin: '10px',
+        fontSize: '20px',
+        background: 'blue',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer'
+      }}>Add Count</button>
     </>
   )
 }

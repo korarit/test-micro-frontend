@@ -9,9 +9,8 @@ export default defineConfig({
     federation({
       name: "app",
       remotes: {
-        // module federation is being handled dynamically. see app.tsx
-        // add dummy.js to prevent vite from throwing an error
-        dummy: "dummy.js",
+        remoteA: "https://test-mico-fe-a.vercel.app/assets/remoteEntry.js",
+        remoteB: "https://test-mico-fe-b.vercel.app/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
